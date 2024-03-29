@@ -1,5 +1,6 @@
 import { Link, createFileRoute } from "@tanstack/react-router"
-import Header from "../components/header/Header"
+import Header from "../pages/home/header/Header"
+import AboutUs from "../pages/home/aboutUs/AboutUs"
 
 export const Route = createFileRoute('/')({
     component: Index,
@@ -10,9 +11,7 @@ return(
     <>
     <div>
         <Header />
-        <h1>Index page</h1>
-        <Link to='/about'>About</Link>
-        <div id="main" style={{paddingTop: "1000px"}}>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+        <AboutUs />
     </div>
     </>
 )

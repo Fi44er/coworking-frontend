@@ -1,0 +1,85 @@
+.aboutBlock {
+    display: flex;  
+    max-height: 550px;
+}
+
+.aboutInfo {
+    width: 60%;
+    background: #f0f0f0;
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2rem;
+    padding-bottom: 2rem;
+    h1 {
+        font-size: 4rem;
+        font-weight: 700;
+    }
+
+    .infoItems {
+        display: flex;
+        grid-gap: 4rem;
+    }
+
+    .buttonBlock {
+        display: flex;
+        grid-gap: 2rem;
+        p {
+            font-size: 1rem;
+        }
+
+        button {
+            background: #F59C33;
+            width: 30%;
+            color: #fff;
+            border: none;
+            font-size: 1rem;
+        }
+    }
+}
+
+.aboutSlider {
+    width: 40%;
+}
+
+@media screen and (max-width: 1070px) {
+    .aboutInfo {
+        h1 {
+            margin-bottom: 0;
+            font-size: 3rem;
+        }
+        padding-left: 2rem;
+        padding-right: 2rem;
+        grid-gap: 2rem;
+    }
+    .infoItems {
+        grid-gap: 2rem;
+    }
+
+    .buttonBlock {
+        flex-direction: column;
+        button {
+            width: 100% !important;
+            height: 2.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .aboutBlock {
+        flex-direction: column;
+    }
+
+    .aboutInfo {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 32px;
+        grid-gap: 0.5rem;
+        align-items: center;
+    }
+
+    .aboutSlider {
+        width: 100%;
+        height: 300px;
+    }
+}
