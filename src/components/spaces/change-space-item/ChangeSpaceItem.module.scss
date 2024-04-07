@@ -1,0 +1,24 @@
+.changeSpaceItem {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+
+    h2, p {
+        margin: 0;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 0.6rem;
+    }
+
+    button {
+        width: 30%;
+        height: 40px;
+    }
+}

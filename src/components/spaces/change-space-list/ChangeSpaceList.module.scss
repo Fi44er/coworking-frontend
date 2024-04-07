@@ -1,0 +1,9 @@
+.spaceList {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1.5rem;
+    max-height: 659px;
+    padding-right: 20px;
+    overflow-y: scroll;
+}

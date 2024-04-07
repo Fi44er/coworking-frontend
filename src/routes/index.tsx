@@ -1,6 +1,7 @@
-import { Link, createFileRoute } from "@tanstack/react-router"
+import { createFileRoute } from "@tanstack/react-router"
 import Header from "../pages/home/header/Header"
 import AboutUs from "../pages/home/aboutUs/AboutUs"
+import { ListSpace } from "../pages/home/list-space/ListRoom"
 
 export const Route = createFileRoute('/')({
     component: Index,
@@ -9,10 +10,9 @@ export const Route = createFileRoute('/')({
 function Index () {
 return(
     <>
-    <div>
         <Header />
         <AboutUs />
-    </div>
+        <ListSpace/>    
     </>
 )
 }

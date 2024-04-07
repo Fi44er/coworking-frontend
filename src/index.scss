@@ -6,7 +6,35 @@ body {
     box-sizing: border-box;
 
     font-family: 'Raleway', sans-serif;
+    padding-bottom: 1000px;
 }
 button {
-    background: none;
+    background: #f59c33;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
 }
+
+button:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    
+  }
+  
+  /* Цвет бегунка (ползунка) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+  
+  /* Цвет фона полоски */
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
