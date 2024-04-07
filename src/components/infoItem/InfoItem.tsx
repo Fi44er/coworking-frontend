@@ -14,7 +14,7 @@ const InfoItem = ({title, topVal, topStr}: InfoItemProps) => {
             if (count < topVal) {
                 const interval = setInterval(() => {
                     setCount(prevCount => prevCount + 1);
-                }, 100);
+                }, 150);
                 return () => clearInterval(interval);
             }
         }, [count])
